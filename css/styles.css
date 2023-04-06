@@ -1,0 +1,175 @@
+body {
+  background-color: #f5f7fa;
+  font-family: "Montserrat", "arial";
+}
+
+li {
+  line-height: 24px;
+}
+
+/* Contenedo principal */
+.contenedor-principal {
+  width: auto;
+  height: auto;
+  margin: 10px 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.descripcion-profesion {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.descripcion {
+  margin-right: 342px;
+}
+
+.informacion-general {
+  padding-left: 50px;
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nombre {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo-seccion-principal {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+/* Proyectos realizados */
+.lista-proyectos {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 17px;
+}
+
+.enlaces-proyectos {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.puntos-lista-pr {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: #595959;
+}
+
+/* Trabajos realizados */
+.subtitulo-seccion-principal {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.subtitulo-seccion-principal-naranja {
+  color: #fb6d3a;
+  margin-top: 15px;
+  margin-bottom: 11px;
+}
+
+.lista-principal {
+  padding-left: 17px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.parrafo-seccion-principal {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #a8a8a8;
+}
+
+.descripcion-parrafo {
+  width: auto;
+}
+
+.experiencia .educacion {
+  margin-right: 100px;
+}
+
+/* contenedor lateral */
+
+.img {
+  margin-left: 1px;
+}
+
+.informacion-lateral {
+  background: #1e2939;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.informacion-directa {
+  margin-left: 10px;
+}
+
+.titulo-lateral {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+  margin-top: 50px;
+}
+
+/* seccion contactos */
+.tipo-contacto {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-left: 5px;
+}
+
+.contacto-info {
+  color: gray;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* seccón de listas */
+
+.lista-lateral {
+  padding-left: 17px;
+}
+
+.lista-lateral>li {
+  color: #fb6d3a;
+}
+
+.elemento-lista-lateral {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: white;
+}
