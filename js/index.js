@@ -8,10 +8,11 @@ changeLanguage.addEventListener("click", function () {
   //     console.log("not clicked");
   //   }
   let ruta = window.location.href;
-  if (ruta.indexOf("/es/") !== -1) {
-    ruta = ruta.replace("/es/", "/en/");
+  if (ruta.includes("en")) {
+    ruta = ruta.replace("/en/", "/");
   } else {
-    ruta = ruta.replace("/en/", "/es/");
+    ruta = ruta.replace("/in", "/en/in");
   }
+  console.log(ruta);
   window.location.href = ruta;
 });
