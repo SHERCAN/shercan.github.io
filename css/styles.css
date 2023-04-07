@@ -244,3 +244,9 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: 650px) {
+  .contenedor-principal {
+    flex-direction: column;
+  }
+}
