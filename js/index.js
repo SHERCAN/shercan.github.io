@@ -12,9 +12,9 @@ if (ruta.includes("en")) {
 changeLanguage.addEventListener("click", function () {
   let ruta = window.location.href;
   if (ruta.includes("en")) {
-    ruta = ruta.replace("/en/index.html", "/index.html");
+    ruta = ruta.replace("/en/index.html", "");
   } else {
-    ruta = ruta.replace("/index.html", "/en/index.html");
+    ruta = ruta.concat("/en/index.html");
   }
   window.location.href = ruta;
 });
