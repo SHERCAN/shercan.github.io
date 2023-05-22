@@ -25,11 +25,11 @@ li {
 }
 
 .descripcion {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 
 .informacion-general {
-  padding-left: 50px;
+  padding-left: 25px;
   padding-top: 55px;
   display: flex;
   flex-direction: column;
@@ -110,10 +110,11 @@ li {
 
 .descripcion-parrafo {
   width: auto;
+  text-align: justify;
 }
 
 .experiencia {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .experiencia .educacion {
   margin-right: 100px;
@@ -128,7 +129,7 @@ li {
 .informacion-lateral {
   background: #1e2939;
   color: #ffffff;
-  padding: 20px;
+  padding: 10px;
 }
 
 .informacion-directa {
