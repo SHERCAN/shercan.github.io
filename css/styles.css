@@ -124,6 +124,7 @@ li {
 
 .img {
   margin-left: 1px;
+  border-radius: 0.5rem;
 }
 
 .informacion-lateral {
