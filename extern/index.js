@@ -54,7 +54,7 @@ gsap.utils.toArray('.scroll-section').forEach(section => {
         scrollTrigger: {
             trigger: section,
             start: 'top 80%',
-            end: 'bottom 100%',
+            end: 'top 30%',
             scrub: 1,
             toggleActions: 'play none none reverse'
         },
