@@ -1,197 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+  --primary: #fb6d3a;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --sidebar-bg: #f8fafc;
+  --border: #e2e8f0;
+  --accent: #fb6d3a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #f5f7fa;
-  font-family: "Montserrat", "arial";
-}
-
-li {
-  line-height: 24px;
-}
-
-/* Contenedo principal */
-.contenedor-principal {
-  width: auto;
-  height: auto;
-  margin: 10px 10px;
-  background-color: white;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.descripcion-profesion {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-}
-
-.descripcion {
-  margin-right: 20px;
-}
-
-.informacion-general {
-  padding-left: 25px;
-  padding-top: 55px;
-  display: flex;
-  flex-direction: column;
-}
-
-.nombre {
-  font-weight: 700;
-  font-size: 45px;
-  line-height: 55px;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.titulo-seccion-principal {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-}
-
-/* Proyectos realizados */
-.lista-proyectos {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  padding-left: 17px;
-}
-
-.enlaces-proyectos {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: #595959;
-}
-
-.puntos-lista-pr {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 3px;
-  color: #595959;
-}
-
-/* Trabajos realizados */
-.subtitulo-seccion-principal {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-}
-
-.subtitulo-seccion-principal-naranja {
-  color: #fb6d3a;
-  margin-top: 15px;
-  margin-bottom: 11px;
-}
-
-.lista-principal {
-  padding-left: 17px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.parrafo-seccion-principal {
-  font-style: normal;
-  font-weight: 400;
+  background-color: #fff;
+  color: var(--text-main);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
   font-size: 12px;
-  line-height: 15px;
-  color: #a8a8a8;
 }
 
-.descripcion-parrafo {
-  width: auto;
-  text-align: justify;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Outfit', sans-serif;
+  color: #0f172a;
+  line-height: 1.2;
 }
 
-.experiencia {
-  margin-right: 20px;
-}
-.experiencia .educacion {
-  margin-right: 100px;
+ul {
+  list-style: none;
 }
 
-/* contenedor lateral */
-
-.img {
-  margin-left: 1px;
-  border-radius: 0.5rem;
+/* Print-optimized layout */
+.contenedor-principal {
+  max-width: 21cm;
+  /* A4 width */
+  min-height: 29.7cm;
+  /* A4 height */
+  margin: 0 auto;
+  display: flex;
+  background: #fff;
+  position: relative;
 }
 
 .informacion-lateral {
-  background: #1e2939;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.informacion-directa {
-  margin-left: 10px;
-}
-
-.titulo-lateral {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
-  margin-top: 50px;
-}
-
-/* seccion contactos */
-.tipo-contacto {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  color: #ffffff;
-  margin-left: 5px;
-}
-
-.contacto-info {
-  color: gray;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-/* seccón de listas */
-
-.lista-lateral {
-  padding-left: 17px;
-}
-
-.lista-lateral > li {
-  color: #fb6d3a;
-}
-
-.elemento-lista-lateral {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: white;
-}
-/* Languages change */
-.switch h3 {
-  color: rgb(0, 0, 0);
-  font-size: 14px;
-  line-height: 24px;
+  width: 32%;
+  background: var(--sidebar-bg);
+  padding: 30px 20px;
+  border-right: 1px solid var(--border);
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  gap: 25px;
 }
-.switch {
+
+.informacion-general {
+  flex: 1;
+  padding: 30px 35px;
+}
+
+/* Sidebar Elements */
+.profile-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.img-container {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 15px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid var(--primary);
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nombre {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.role-subtitle {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.titulo-lateral,
+.titulo-seccion-principal {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 5px;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.contact-item {
+  margin-bottom: 8px;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contact-icon {
+  font-weight: 700;
+  color: var(--primary);
+  min-width: 15px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.skill-tag {
+  background: #fff;
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 10px;
+  color: var(--text-main);
+}
+
+/* Main Content Elements */
+.seccion {
+  margin-bottom: 25px;
+}
+
+.descripcion-profesion {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.descripcion-parrafo {
+  color: var(--text-main);
+  margin-bottom: 8px;
+  text-align: justify;
+}
+
+.experience-item {
+  margin-bottom: 18px;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 3px;
+}
+
+.subtitulo-seccion-principal {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.date-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.company-label {
+  color: var(--primary);
+  font-size: 12px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.lista-principal li {
+  margin-bottom: 4px;
+  padding-left: 15px;
+  position: relative;
+}
+
+.lista-principal li::before {
+  content: "•";
+  color: var(--primary);
   position: absolute;
+  left: 0;
+  font-weight: bold;
+}
+
+/* Tech Stack Section (Resume Optimized) */
+.tech-stack-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.tech-category h5 {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--text-muted);
+}
+
+/* Language Switcher (Hidden in Print) */
+.lang-switcher {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.switch {
+  position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 5px;
+  width: 40px;
+  height: 20px;
 }
 
 .switch input {
@@ -207,48 +239,64 @@ li {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  background-color: #cbd5e1;
+  transition: .4s;
+  border-radius: 20px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
   background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-input:checked + .slider {
-  background-color: #2196f3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196f3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
+  transition: .4s;
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
-  .contenedor-principal {
-    flex-direction: column;
+input:checked+.slider {
+  background-color: var(--primary);
+}
+
+input:checked+.slider:before {
+  transform: translateX(20px);
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: none;
   }
+
+  .contenedor-principal {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+  }
+
+  .lang-switcher {
+    display: none;
+  }
+
+  .informacion-lateral {
+    background: #f1f5f9 !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @page {
+    margin: 0;
+  }
+}
+
+/* Hide background blob from previous design */
+.bg-blob {
+  display: none;
 }

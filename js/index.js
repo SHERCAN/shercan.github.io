@@ -1,20 +1,34 @@
-changeLanguage = document.getElementById("langChange");
-textChange = document.getElementById("textChange");
+const changeLanguage = document.getElementById("langChange");
+const textChange = document.getElementById("textChange");
 
-let ruta = window.location.href;
-if (ruta.includes("en")) {
-  changeLanguage.checked = true;
-  textChange.textContent = "EN";
-} else {
-  changeLanguage.checked = false;
-  textChange.textContent = "ES";
+const updateUI = () => {
+    const isEnglish = window.location.pathname.includes("/en/");
+    if (changeLanguage) changeLanguage.checked = isEnglish;
+    if (textChange) textChange.textContent = isEnglish ? "EN" : "ES";
+};
+
+if (changeLanguage) {
+    changeLanguage.addEventListener("change", function () {
+        let currentPath = window.location.pathname;
+        let newPath;
+
+        if (this.checked) {
+            // Switch to English
+            if (!currentPath.includes("/en/")) {
+                newPath = currentPath.replace(/\/index\.html$|^\/$/, "/en/index.html");
+                // If it was just root /
+                if (newPath === currentPath) newPath = currentPath + "en/index.html";
+            }
+        } else {
+            // Switch to Spanish
+            newPath = currentPath.replace("/en/index.html", "/index.html").replace("/en/", "/");
+        }
+
+        if (newPath) {
+            window.location.pathname = newPath.replace(/\/\/+/g, '/');
+        }
+    });
 }
-changeLanguage.addEventListener("click", function () {
-  let ruta = window.location.href;
-  if (ruta.includes("en")) {
-    ruta = ruta.replace("en/index.html", "");
-  } else {
-    ruta = ruta.concat("en/index.html");
-  }
-  window.location.href = ruta;
-});
+
+// Initialize UI
+updateUI();

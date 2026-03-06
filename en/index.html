@@ -4,230 +4,196 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>My curriculum</title>
+  <title>Resume Wilman Yesid Farfán Diaz | Full Stack & Mechatronics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description"
+    content="Resume of Wilman Yesid Farfán Diaz. Specialist in .NET, Python, Blockchain and Industrial Automation." />
+
   <link rel="stylesheet" href="../css/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500;600&display=swap"
     rel="stylesheet" />
 </head>
 
 <body>
-  <!-- Contenedor principal -->
-  <div class="contenedor-principal">
-    <label class="switch">
-      <input type="checkbox" id="langChange">
-      <span class="slider round"></span>
-      <div>
-        <h3 id="textChange">ES</h3>
+  <main class="contenedor-principal">
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+      <label class="switch">
+        <input type="checkbox" id="langChange" checked>
+        <span class="slider"></span>
+      </label>
+      <div style="display:none" id="textChange">EN</div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="informacion-lateral">
+      <div class="profile-header">
+        <div class="img-container">
+          <img src="../images/image.jpg" alt="Profile Photo" />
+        </div>
+        <h1 class="nombre">Wilman Yesid Farfán Diaz</h1>
+        <p class="role-subtitle">Full Stack & Mechatronics Eng.</p>
       </div>
 
-    </label>
-    <!-- Información general -->
-    <div class="informacion-general">
-      <div class="descripcion">
-        <!-- Contenedor titulo -->
-        <h3 class="descripcion-profesion">Profile</h3>
-        <p class="descripcion-parrafo">
-          Mechatronics engineer with experience in programming industrial equipment using languages such as Ladder, FBD, and stationary robotics with MELFA V. Proficient in programming languages including Python, C++, Rust, Java, Javascript, and others like HTML and CSS. Experienced in integrating IoT technologies and communication protocols such as MODBUS, MQTT, TCP, among others.
-        </p>
-        <p class="descripcion-parrafo">
-          With a solid background in development, I encompass both the software and hardware domains. In web development, I excel in Node.js and Node-RED, while in IoT, I have worked with various platforms. In hardware, I utilize tools like Arduino IDE, ESP IDF, Eagle, and EasyEDA to create integrated solutions. Additionally, I possess advanced skills in both Frontend and Backend development and database management, covering both relational and non-relational models. My versatile approach and comprehensive experience enable me to tackle complex projects efficiently.
-        </p>
-        <p class="descripcion-parrafo">
-          Experience in the education sector sharing knowledge in a human, friendly, and understanding way, creating
-          pleasant
-          environments for communication and cooperative work, with the ability to identify the skills and abilities of
-          individuals within a team.
-        </p>
-      </div>
-      <div class="proyectos">
-        <!-- Proyectos realizados -->
-        <h3 class="titulo-seccion-principal">Projects</h3>
-        <ul class="lista-proyectos">
-          <li>
-            <a href="https://github.com/SHERCAN" class="enlaces-proyectos">https://github.com/SHERCAN</a>
-            <span class="puntos-lista-pr">.........</span>
-            <span>[ HTML5, CSS, PYTHON3 ]</span>
-          </li>
-          <li>
-            <a href="https://github.com/Shercan-Enerion"
-              class="enlaces-proyectos">https://github.com/Shercan-Enerion</a>
-            <span class="puntos-lista-pr">.........</span>
-            <span>[ HTML5, CSS, PYTHON3, OCPP ]</span>
-          </li>
+      <section>
+        <h3 class="titulo-lateral">Contact</h3>
+        <div class="contact-item"><span class="contact-icon">📍</span> Bogotá, Colombia</div>
+        <div class="contact-item"><span class="contact-icon">📞</span> +57 3102730602</div>
+        <div class="contact-item"><span class="contact-icon">✉️</span> auto.farfan@gmail.com</div>
+        <div class="contact-item"><span class="contact-icon">🔗</span> github.com/SHERCAN</div>
+      </section>
+
+      <section>
+        <h3 class="titulo-lateral">Tech Stack</h3>
+        <div class="tech-category" style="margin-bottom:10px">
+          <h4 style="font-size:10px; color:var(--primary); margin-bottom:5px">LANGUAGES</h4>
+          <div class="skills-grid">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">C# / .NET</span>
+            <span class="skill-tag">Rust</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Dart (Flutter)</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <h4 style="font-size:10px; color:var(--primary); margin-bottom:5px">TOOLS & OTHERS</h4>
+          <div class="skills-grid">
+            <span class="skill-tag">Next.js / Astro</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">PowerBI</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Solana / Rust</span>
+            <span class="skill-tag">IoT / Modbus</span>
+            <span class="skill-tag">Selenium</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="titulo-lateral">Languages</h3>
+        <div class="contact-item" style="justify-content:space-between">
+          <span>Spanish</span>
+          <span style="color:var(--primary)">Native</span>
+        </div>
+        <div class="contact-item" style="justify-content:space-between">
+          <span>English</span>
+          <span style="color:var(--primary)">A2/B1</span>
+        </div>
+      </section>
+
+      <section>
+        <h3 class="titulo-lateral">Skills</h3>
+        <ul style="font-size:10px; color:var(--text-main)">
+          <li>• Technical Leadership</li>
+          <li>• Growth Mindset</li>
+          <li>• Process Automation</li>
+          <li>• Complex Problem Solving</li>
         </ul>
-      </div>
-      <div class="experiencia">
-        <h3 class="titulo-seccion-principal">Work experience</h3>
-        <!-- Primer empleo -->
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Technical training instructor mechatronic
-            <span class="subtitulo-seccion-principal-naranja">
-              SENA, Bogotá</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2017-10 - until present
-          </p>
-          <ul class="lista-principal">
-            <li>
-              To develop learners' knowledge in topics related to the technical area of mechatronic engineering, such as
-              programming,
-              electronics, mechanics, and automation.
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Programmer
-            <span class="subtitulo-seccion-principal-naranja">
-              Enerion, Bogotá</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2022-10 - 2023-01
-          </p>
-          <ul class="lista-principal">
-            <li>
-              Creation of scripts for conversion of industrial protocols, creation of Web page for data visualization
-              for grid-connected photovoltaic systems, data analysis for energy efficiency.
-            </li>
-          </ul>
-        </div>
-        <!-- Segundo empleo -->
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Laboratory assistant
-            <span class="subtitulo-seccion-principal-naranja">G.A.S INSTRUMENT, Bogotá</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2017-03 - 2017-09
-          </p>
-          <ul class="lista-principal">
-            <li>
-              Monitoring calibration procedures on equipment in the energy sector, creating tracking and verification
-              systems for
-              traceability of calibration standard equipment.
-            </li>
-          </ul>
-        </div>
-        <!-- tercer empleo -->
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Service specialist
-            <span class="subtitulo-seccion-principal-naranja">Saytec l.t.d.a, Tocancipa</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2015-09 - 2017-03
-          </p>
-          <ul class="lista-principal">
-            <li>Overhaul of industrial equipment, PLC programming, design and construction of equipment for the
-              improvement of internal
-              processes,
-              commissioning of machinery and verification of systems,
-              traceability of calibrations according to technical standards.</li>
-          </ul>
-        </div>
-      </div>
-      <!-- Educación -->
-      <div>
-        <h3 class="titulo-seccion-principal">Education</h3>
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Web and application programming, Certified
-            <span class="subtitulo-seccion-principal-naranja">Universidad de Caldas, Manizales</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2021-05 - 2021-12
-          </p>
-          </ul>
-        </div>
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Mechatronic engineer, Professional
-            <span class="subtitulo-seccion-principal-naranja">Universidad agraria de colombia, Bogotá</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2016-01 - 2020-04
-          </p>
-          </ul>
-        </div>
-        <div>
-          <h4 class="subtitulo-seccion-principal">
-            Mechatronic engineer, Technologist
-            <span class="subtitulo-seccion-principal-naranja">SENA, Bogotá</span>
-          </h4>
-          <p class="parrafo-seccion-principal">
-            2012-09 - 2015-10
-          </p>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <aside class="informacion-lateral">
-      <div>
-        <h1 class="nombre">Wilman Yesid Farfán Diaz</h1>
-      </div>
-      <img class="img" src="../images/image.jpg" alt="Foto de perfil" width="300" />
-      <div class="informacion-directa">
-        <!-- Contactos -->
-        <div>
-          <div class="contactos">
-            <h3 class="titulo-lateral">Contact</h3>
-            <span class="tipo-contacto">C:</span>
-            <a class="contacto-info" href="tel:+57 3012041605">+57 3012041605</a>
-          </div>
-          <div>
-            <span class="tipo-contacto">E:</span>
-            <a class="contacto-info" href="mail:sidereoyess@gmail.com">
-              sidereoyess@gmail.com</a>
-          </div>
-          <div>
-            <span class="tipo-contacto">N:</span>
-            <a class="contacto-info" href="https://goo.gl/maps/Do7EkTLjbufrzNUE8">
-              Bogotá-Colombia</a>
-          </div>
-        </div>
-        <!-- Habilidades -->
-        <div class="habilidades-tecnicas">
-          <h3 class="titulo-lateral">Skills</h3>
-          <ul class="lista-lateral">
-            <li>
-              <span class="elemento-lista-lateral">Teamwork</span>
-            </li>
-            <li>
-              <span class="elemento-lista-lateral">
-                Digitals skills</span>
-            </li>
-            <li>
-              <span class="elemento-lista-lateral">
-                Growth mindset</span>
-            </li>
-            <li>
-              <span class="elemento-lista-lateral">
-                Continuous learning</span>
-            </li>
-            <li>
-              <span class="elemento-lista-lateral">
-                initiative and self-management</span>
-            </li>
-          </ul>
-        </div>
-        <div class="habilidades-blandas">
-          <h3 class="titulo-lateral">Languages</h3>
-          <ul class="lista-lateral">
-            <li>
-              <span class="elemento-lista-lateral">English &nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★☆☆☆</span>
-            </li>
-            <li>
-              <span class="elemento-lista-lateral">Spanish
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★★</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      </section>
     </aside>
-  </div>
+
+    <!-- Main Content -->
+    <article class="informacion-general">
+      <section class="seccion" style="margin-bottom:20px">
+        <h3 class="titulo-seccion-principal">Professional Profile</h3>
+        <p class="descripcion-parrafo">
+          Mechatronics Engineer and Full Stack Developer focused on high performance and automation. Specialist in
+          <b>.NET</b> and <b>Python</b> ecosystems, with a unique ability to integrate industrial solutions
+          (IoT/Robotics) with modern and scalable software architectures.
+        </p>
+        <p class="descripcion-parrafo">
+          Expert in developing advanced <b>bots and automation tools</b> (Rust/Python), <b>Blockchain (Solana)</b>
+          integrations, and critical data analysis with <b>PowerBI</b>. Recognized for optimizing business processes
+          through AI and tailored technological solutions.
+        </p>
+      </section>
+
+      <section class="seccion">
+        <h3 class="titulo-seccion-principal">Work Experience</h3>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <h4 class="subtitulo-seccion-principal">Senior .NET Developer</h4>
+            <span class="date-label">March 2025 – Present</span>
+          </div>
+          <span class="company-label">Ministry of Health, Bogotá</span>
+          <ul class="lista-principal">
+            <li>Development of critical applications in .NET 9 and SQL database optimization.</li>
+            <li>Implementation of advanced dashboards in PowerBi for strategic decision-making.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <h4 class="subtitulo-seccion-principal">Software Developer - LTDMAI Project</h4>
+            <span class="date-label">January 2025 – Present</span>
+          </div>
+          <span class="company-label">National University of Colombia, Bogotá</span>
+          <ul class="lista-principal">
+            <li>Development of an inclusive educational platform applying WCAG standards and modern UX.</li>
+            <li>Use of Next.js and AWS services for high-availability deployment.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <h4 class="subtitulo-seccion-principal">Blockchain Developer (Freelance)</h4>
+          <span class="date-label">October 2024 – February 2025</span>
+          <span class="company-label">Remote</span>
+          <ul class="lista-principal">
+            <li>Architecture of Smart Contracts in <b>Rust (Solana)</b> and high-frequency bots for CEX.</li>
+            <li>Web3 integration with dynamic frontends.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <h4 class="subtitulo-seccion-principal">Mechatronics Training Instructor</h4>
+            <span class="date-label">October 2017 – December 2024</span>
+          </div>
+          <span class="company-label">SENA, Bogotá</span>
+          <ul class="lista-principal">
+            <li>Training leader in automation, applied data analytics, and Industry 4.0.</li>
+            <li>Development of technical curricula integrating Web Stack with industrial hardware.</li>
+          </ul>
+        </div>
+
+        <div class="experience-item">
+          <div class="exp-header">
+            <h4 class="subtitulo-seccion-principal">Projects Programmer</h4>
+            <span class="date-label">October 2022 – Present</span>
+          </div>
+          <span class="company-label">Enerion, Bogotá</span>
+          <ul class="lista-principal">
+            <li>Development of Python algorithms for energy efficiency in LATAM.</li>
+            <li>Technical support and deployment of solutions based on industrial protocols.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="seccion">
+        <h3 class="titulo-seccion-principal">Education</h3>
+        <div class="experience-item" style="margin-bottom:10px">
+          <div class="exp-header">
+            <h4 class="subtitulo-seccion-principal">Mechatronics Engineering (Professional)</h4>
+            <span class="date-label">2016 – 2020</span>
+          </div>
+          <span class="company-label" style="color:var(--text-muted)">Universidad Agraria de Colombia</span>
+        </div>
+        <div class="experience-item">
+          <div class="exp-header">
+            <h4 class="subtitulo-seccion-principal">Web & Apps Programming Diploma</h4>
+            <span class="date-label">2021</span>
+          </div>
+          <span class="company-label" style="color:var(--text-muted)">University of Caldas</span>
+        </div>
+      </section>
+    </article>
+  </main>
+
   <script src="../js/index.js"></script>
 </body>
 
